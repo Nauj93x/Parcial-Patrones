@@ -1,0 +1,62 @@
+% Documento LaTeX del proyecto Flyweight con sección para imagen de salida de consola
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{parskip}
+\geometry{margin=2.5cm}
+
+\definecolor{codegray}{rgb}{0.95,0.95,0.95}
+\definecolor{keyword}{rgb}{0.36,0.1,0.6}
+\lstset{
+  backgroundcolor=\color{codegray},
+  keywordstyle=\color{keyword}\bfseries,
+  basicstyle=\ttfamily\small,
+  breaklines=true,
+  frame=single,
+  numbers=left,
+  numberstyle=\tiny,
+  showstringspaces=false,
+  commentstyle=\itshape\color{gray},
+  captionpos=b
+}
+
+\title{Análisis detallado del código — Patrón Flyweight con persistencia en Supabase}
+\author{Proyecto: Flyweight PARCIAL}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Documento técnico orientado a sustentación: descripción puntual de las clases clave, métodos de mayor interés, contratos (precondiciones/postcondiciones), y notas de implementación y pruebas. Incluye una sección para insertar una imagen con la salida de consola que puedas capturar y guardar como \texttt{console_output_example.png} en el mismo directorio del proyecto.
+\end{abstract}
+
+% (Contenido resumido — puedes insertar aquí el resto del texto que generamos previamente)
+
+\section{Salida de consola (imagen)}
+A continuación se muestra un ejemplo de cómo incluir una imagen con la salida de consola en tu documento. Guarda la captura de la consola como \texttt{console_output_example.png} en la carpeta del proyecto (por ejemplo en el mismo directorio que este .tex o en \texttt{docs/}) y compila en Overleaf o localmente.
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.95\textwidth]{console_output_example.png}
+  \caption{Ejemplo de salida en consola: arranque, menú y mensajes de evicción/persistencia. Guarda tu imagen con el nombre \texttt{console_output_example.png} para que se muestre aquí.}
+  \label{fig:console}
+\end{figure}
+
+\section{Instrucciones rápidas}
+\begin{itemize}
+  \item Captura la salida de la consola durante la demo (por ejemplo con la herramienta de captura de tu sistema o redirigiendo la salida a un archivo y sacando una imagen).
+  \item Nombra la imagen exactamente \texttt{console_output_example.png} y súbela a Overleaf en el mismo proyecto (o cópiala en la carpeta \texttt{docs/} si compilas localmente).
+  \item Compila el documento; la figura se insertará en la sección de salida de consola.
+\end{itemize}
+
+\bigskip
+\textbf{Nota:} si prefieres otro formato o nombre de archivo, actualiza el argumento de \texttt{\includegraphics\{...\}}.
+
+\end{document}
